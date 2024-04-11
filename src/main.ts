@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					column.appendChild(previewImage);
 					column.appendChild(fullImage);
 				});
-				document.querySelector("#app").appendChild(column);
+				document.querySelector("#app")!.appendChild(column);
 			});
 		});
 });
