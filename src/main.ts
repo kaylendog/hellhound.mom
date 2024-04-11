@@ -17,7 +17,7 @@ const split = (arr: any[], count: number) => {
 
 document.addEventListener("DOMContentLoaded", () => {
 	fetch(
-		"https://e621.net/posts.json?tags=order:random%20loona_(helluva_boss)%20favcount:%3E200%20solo%20rating:s"
+		"https://e621.net/posts.json?tags=order:random%20loona_(helluva_boss)%20favcount:%3E200%20solo%20rating:s%20-pregnant"
 	)
 		.then((response) => response.json())
 		.then((data) => {
