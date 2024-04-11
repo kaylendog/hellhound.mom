@@ -1,0 +1,50 @@
+html,
+body {
+	background: #101110;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+		sans-serif;
+}
+
+#app {
+	width: 100vw;
+	display: grid;
+
+	/* on small screens, default to a single column and row */
+	grid-template: 1fr / repeat(8, 0.125fr);
+}
+
+img {
+	width: 100%;
+	height: auto;
+	border-radius: 4px;
+	transition: all 0.3s;
+
+	background: #202220;
+}
+
+img:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+img.blurred {
+	filter: blur(10px);
+}
+
+img.hidden {
+	display: none;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	/* add spacing */
+	padding: 1rem;
+	/* add item spacing */
+	gap: 1rem;
+	justify-content: space-between;
+}
